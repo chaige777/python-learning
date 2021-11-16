@@ -1,0 +1,14 @@
+import numpy as np
+import time
+
+t1 = time.time()
+a = []
+for x in range(1000000):
+    a.append(x**2)
+t2 = time.time()
+print(t2 - t1)
+
+t3 = time.time()
+b = np.arange(1000000)**2
+t4 =time.time()
+print(t4 - t3)
